@@ -1,0 +1,442 @@
+/* Dark mode switch styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 27px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffffb2;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #ffa601;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #018dff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Toggle label styling */
+.toggle-label {
+  margin-left: 10px;
+  font-size: 0px;
+}
+
+body.dark-mode {
+  background-image: url(backb1.jpg);
+  background-color: #000000c8;
+  color: #ffffff;
+}
+
+.dark-mode #text {
+  background-color: #000000bd;
+  border-radius: 0px;
+  opacity: 1;
+  margin: 20px;
+  padding: 10px;
+  width: auto;
+  height: 90%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  margin-left: 20px;
+}
+
+.dark-mode .topnav ul {
+  list-style-type: none;
+  border-radius: 0px;
+  margin: 20px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #000000bd;
+}
+
+.dark-mode .topnav li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  font-display: bold;
+  text-decoration: solid;
+  font-size: 20px;
+}
+
+.dark-mode #text_skills {
+  background-color: #000000bd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.bg-img {
+  min-height: 0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: center;
+  margin: 0px;
+  width: auto;
+}
+
+.topnav ul {
+  list-style-type: none;
+  border-radius: 0px;
+  margin: 20px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.747);
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  font-display: bold;
+  text-decoration: solid;
+  font-size: 20px;
+}
+
+.topnav li a:hover {
+  background-color: #ddd;
+  color: rgb(255, 3, 3);
+}
+
+body {
+  background-image: url("back4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#text {
+  background-color: #fffcfce0;
+  border-radius: 0px;
+  opacity: 1;
+  margin: 20px;
+  padding: 10px;
+  width: auto;
+  height: 90%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  margin-left: 20px;
+}
+
+#text_skills {
+  background-color: #ffffffcb;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.dark-mode #skills h2 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#skills h2 {
+  font-size: 30px;
+  color: #000000;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-list li {
+  text-align: center;
+  margin: 15px;
+}
+
+.skill-list img {
+  max-width: 100px; /* Adjust as needed */
+  max-height: 100px; /* Adjust as needed */
+  border-radius: 10px;
+}
+
+.dark-mode .skill-list span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.skill-list span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.dark-mode #text_blog {
+  background-color: #000000bd;
+}
+
+#text_blog {
+  border-radius: 0px;
+  opacity: 1;
+  margin: 20px;
+  padding: 10px;
+  width: auto;
+  height: 100%;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  margin-left: 20px;
+  background-color: #ffffffb2;
+}
+
+#text h2 {
+  margin-left: 20px;
+  font-size: 40px; /* Reduced font size for smaller screens */
+}
+
+#text_blog h2 {
+  font-size: 40px; /* Reduced font size for smaller screens */
+}
+
+#text img {
+  margin-top: 60px; /* Reduced margin for smaller screens */
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px; /* Reduced margin for smaller screens */
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#text p {
+  margin-left: 20px;
+  margin-top: 60px; /* Reduced margin for smaller screens */
+  max-width: 100%;
+  align-self: center;
+}
+
+#text_blog {
+  padding: 20px;
+}
+
+.blog {
+  margin-bottom: 30px;
+}
+
+article {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+#text_blog h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#text_blog p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.comments-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Additional styling for the like button */
+.like-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #8e8e8e; /* Default color for unliked state */
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  margin-top: 10px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.like-button .heart-icon::before {
+  content: '\2764'; /* Unicode heart symbol */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/* Style for the liked state */
+.like-button.liked {
+  color: #ff4f4f; /* Color for liked state */
+}
+
+/* Additional styling for the liked state heart icon */
+.like-button.liked .heart-icon::before {
+  color: #ff4f4f; /* Color for liked state */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 528px) {
+  #text img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 150px;
+  }
+  .bg-img,
+  #text_blog {
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ffffffe4;
+  }
+  .topnav li a {
+    font-size: 13px;
+    padding: 8px;
+    margin: 0px;
+  }
+  #text {
+    background-color: #ffffffbd;
+    border-radius: 0px;
+    opacity: 1;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: 100%; /* Set the height to 100% */
+    text-align: justify;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column; /* Ensure flex items are stacked vertically */
+    justify-content: space-between; /* Push content to the top and bottom */
+  }
+  .dark-mode #text img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-height: 150px;
+  }
+  .dark-mode .bg-img,
+  .dark-mode #text_blog {
+    margin-top: 10px;
+    background-color: #000000c2;
+  }
+  .dark-mode .topnav li a {
+    font-size: 13px;
+    padding: 6px;
+  }
+  .dark-mode #text {
+    background-color: #000000bd;
+    border-radius: 0px;
+    opacity: 1;
+    margin: 10px;
+    padding: 10px;
+    width: auto;
+    height: 100%; /* Set the height to 100% */
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column; /* Ensure flex items are stacked vertically */
+    justify-content: space-between; /* Push content to the top and bottom */
+  }
+  footer {
+    padding: 0px;
+    margin-top: 30px;
+    position: static;
+  }
+  .dark-mode .social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+/* Footer styling */
+.dark-mode footer {
+  background-color: #000000bd;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: auto;
+  background-color: #ffffffbd;
+  border-radius: 40px;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add hover effect */
+.social-icons li:hover img {
+  transform: scale(1.2);
+}
